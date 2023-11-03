@@ -15,10 +15,10 @@ import { debounce } from '@helpers/utils';
 
 // Constants
 import { APP_ROUTERS, headerItems } from '@constants';
-import { useCart } from '@stores/cart';
+import { useCartStore } from '@stores/cartStore';
 
 const Header = memo(({ onToggleCart }: { onToggleCart: () => void }) => {
-  const { cartItems } = useCart();
+  const { cartItems } = useCartStore();
 
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();

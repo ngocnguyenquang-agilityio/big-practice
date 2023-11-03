@@ -1,8 +1,5 @@
-// Libs
-import { useId } from 'react';
-
 // Stores
-import { useCart } from '@stores/cart';
+import { useCartStore } from '@stores/cartStore';
 
 // Components
 import { Button } from '@components/Button';
@@ -11,14 +8,12 @@ import { Button } from '@components/Button';
 import { IProduct } from '@interfaces';
 
 const ProductDetail = ({ product }: { product: IProduct }) => {
-  const { addToCart } = useCart();
-  const productCartId = useId();
+  const { addToCart } = useCartStore();
 
   const handleAddToCart = () => {
     if (product) {
       addToCart({
-        id: productCartId,
-        product,
+        ...product,
         quantity: 1,
       });
     }
@@ -26,7 +21,7 @@ const ProductDetail = ({ product }: { product: IProduct }) => {
 
   return (
     <div className='flex flex-col rounded-lg border p-8 border-neutral-800 bg-black md:p-12 lg:flex-row lg:gap-8'>
-      <div className='h-full w-full basis-full lg:basis-4/6'>
+      <div className='h-full w-full basis-full'>
         <div className='relative h-full max-h-[500px] w-full overflow-hidden flex items-center justify-between mx-auto'>
           <img
             src={product.thumbnail}

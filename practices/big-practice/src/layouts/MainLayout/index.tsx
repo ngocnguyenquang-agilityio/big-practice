@@ -4,10 +4,10 @@ import Footer from '@components/Footer';
 import Header from '@components/Header';
 
 // Stores
-import { useCart } from '@stores/cart';
+import { useCartStore } from '@stores/cartStore';
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
-  const { isOpenCart, toggleCart } = useCart();
+  const { isOpenCart, toggleCart } = useCartStore();
 
   return (
     <div className='bg-neutral-900 text-white selection:bg-pink-500 selection:text-white'>

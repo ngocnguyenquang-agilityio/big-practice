@@ -1,7 +1,5 @@
 import { IProduct } from './product';
 
-export interface IProductCartItem {
-  id: string;
-  product: IProduct;
+export interface IProductCartItem extends IProduct {
   quantity: number;
 }

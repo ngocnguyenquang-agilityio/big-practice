@@ -9,7 +9,7 @@ exports[`ProductCard Component Should match snapshot 1`] = `
         class="flex flex-col rounded-lg border p-8 border-neutral-800 bg-black md:p-12 lg:flex-row lg:gap-8"
       >
         <div
-          class="h-full w-full basis-full lg:basis-4/6"
+          class="h-full w-full basis-full"
         >
           <div
             class="relative h-full max-h-[500px] w-full overflow-hidden flex items-center justify-between mx-auto"
@@ -76,7 +76,7 @@ exports[`ProductCard Component Should match snapshot 1`] = `
       class="flex flex-col rounded-lg border p-8 border-neutral-800 bg-black md:p-12 lg:flex-row lg:gap-8"
     >
       <div
-        class="h-full w-full basis-full lg:basis-4/6"
+        class="h-full w-full basis-full"
       >
         <div
           class="relative h-full max-h-[500px] w-full overflow-hidden flex items-center justify-between mx-auto"

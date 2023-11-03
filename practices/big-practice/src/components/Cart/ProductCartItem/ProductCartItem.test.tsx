@@ -10,8 +10,7 @@ import { IProductCartItem } from '@interfaces';
 import { mockProduct } from '@mocks';
 
 const props: IProductCartItem = {
-  id: 'id',
-  product: mockProduct,
+  ...mockProduct,
   quantity: 1,
 };
 
