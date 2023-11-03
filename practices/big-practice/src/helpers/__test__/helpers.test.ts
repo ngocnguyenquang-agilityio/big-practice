@@ -11,7 +11,7 @@ describe('Test buildQueryProductAPIEndpoint functions', () => {
       category: '',
     };
     const result = buildQueryProductEndpoint(test);
-    expect(result).toEqual('?limit=9&skip=0&select=title,price,images,category,thumbnail,id');
+    expect(result).toEqual('?limit=9&skip=0&select=title,price,images,category,thumbnail,id,description');
   });
 
   test('buildQueryProductAPIEndpoint with standingPage value', () => {
@@ -22,7 +22,7 @@ describe('Test buildQueryProductAPIEndpoint functions', () => {
       category: '',
     };
     const result = buildQueryProductEndpoint(test);
-    expect(result).toEqual('?limit=9&skip=0&select=title,price,images,category,thumbnail,id');
+    expect(result).toEqual('?limit=9&skip=0&select=title,price,images,category,thumbnail,id,description');
   });
 
   test('buildQueryProductAPIEndpoint with searchKeyword value', () => {

@@ -62,6 +62,9 @@ exports[`ProductCard Component Should match snapshot 1`] = `
               </span>
             </p>
           </div>
+          <div
+            class="prose mx-auto max-w-6xl text-base leading-7 prose-headings:mt-8 prose-headings:font-semibold prose-headings:tracking-wide prose-h1:text-5xl prose-h2:text-4xl prose-h3:text-3xl prose-h4:text-2xl prose-h5:text-xl prose-h6:text-lg prose-a:underline hover:prose-a:text-neutral-300 prose-ol:mt-8 prose-ol:list-decimal prose-ol:pl-6 prose-ul:mt-8 prose-ul:list-disc prose-ul:pl-6 text-white prose-headings:text-white prose-a:text-white prose-strong:text-white mb-6 text-sm leading-tight text-white/[60%]"
+          />
           <button
             class="inline-flex items-center text-white justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 bg-blue-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 w-full h-11 rounded-full"
           >
@@ -129,6 +132,9 @@ exports[`ProductCard Component Should match snapshot 1`] = `
             </span>
           </p>
         </div>
+        <div
+          class="prose mx-auto max-w-6xl text-base leading-7 prose-headings:mt-8 prose-headings:font-semibold prose-headings:tracking-wide prose-h1:text-5xl prose-h2:text-4xl prose-h3:text-3xl prose-h4:text-2xl prose-h5:text-xl prose-h6:text-lg prose-a:underline hover:prose-a:text-neutral-300 prose-ol:mt-8 prose-ol:list-decimal prose-ol:pl-6 prose-ul:mt-8 prose-ul:list-disc prose-ul:pl-6 text-white prose-headings:text-white prose-a:text-white prose-strong:text-white mb-6 text-sm leading-tight text-white/[60%]"
+        />
         <button
           class="inline-flex items-center text-white justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 bg-blue-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 w-full h-11 rounded-full"
         >

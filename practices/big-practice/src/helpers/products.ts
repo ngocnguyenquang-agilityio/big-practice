@@ -19,7 +19,7 @@ export const buildQueryProductEndpoint = ({ standingPage, searchKeyword, product
       return `/search?q=${searchKeyword}`;
 
     case !isEmpty(standingPage):
-      return `?limit=9&skip=${convertToSkip(standingPage!)}&select=title,price,images,category,thumbnail,id`;
+      return `?limit=9&skip=${convertToSkip(standingPage!)}&select=title,price,images,category,thumbnail,id,description`;
 
     case !isEmpty(category):
       return `/category/${category}`;
@@ -28,6 +28,6 @@ export const buildQueryProductEndpoint = ({ standingPage, searchKeyword, product
       return `/${productId}`;
 
     default:
-      return `?limit=9&skip=0&select=title,price,images,category,thumbnail,id`;
+      return `?limit=9&skip=0&select=title,price,images,category,thumbnail,id,description`;
   }
 };

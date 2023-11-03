@@ -4,6 +4,7 @@ import { useCartStore } from '@stores/cartStore';
 // Components
 import ProductCartItem from '../ProductCartItem';
 import CartEmpty from '../CartEmpty';
+import { Button } from '@components/Button';
 
 const CartBody = () => {
   const { cartItems } = useCartStore();
@@ -41,6 +42,7 @@ const CartBody = () => {
             <span className='ml-1 inline'>USD</span>
           </p>
         </div>
+        <Button size='xl'>Proceed to Checkout</Button>
       </div>
     </div>
   ) : (
