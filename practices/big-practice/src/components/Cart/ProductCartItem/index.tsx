@@ -12,10 +12,18 @@ import QuantityActionButton from '@components/QuantityActionButton';
 import { Icon } from '@components/Icon';
 
 const ProductCartItem = ({ id, product, quantity }: IProductCartItem) => {
-  const { removeFromCart } = useCart();
+  const { removeFromCart, increaseQuantity, decreaseQuantity } = useCart();
 
   const handleRemoveFromCart = () => {
     removeFromCart(id);
+  };
+
+  const handleIncreaseQuantity = () => {
+    increaseQuantity(id);
+  };
+
+  const handleDecreaseQuantity = () => {
+    decreaseQuantity(id);
   };
 
   return (
@@ -54,9 +62,8 @@ const ProductCartItem = ({ id, product, quantity }: IProductCartItem) => {
         </p>
         <QuantityActionButton
           quantity={quantity}
-          // TODO: Handle increase and decrease quantity
-          handleDecrease={() => {}}
-          handleIncrease={() => {}}
+          handleIncrease={handleIncreaseQuantity}
+          handleDecrease={handleDecreaseQuantity}
         />
       </div>
     </div>

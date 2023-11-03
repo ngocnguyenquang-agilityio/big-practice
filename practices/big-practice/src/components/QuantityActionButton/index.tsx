@@ -15,6 +15,7 @@ const QuantityActionButton = ({ quantity, handleDecrease, handleIncrease }: IQua
         className='ease flex h-full min-w-[36px] max-w-[36px] flex-none items-center justify-center rounded-full px-2 transition-all duration-200 hover:border-neutral-800 hover:opacity-80 ml-auto'
         variant='link'
         onClick={handleDecrease}
+        disabled={quantity === 1 ? true : false}
       >
         <Icon
           svg={minusIcon}

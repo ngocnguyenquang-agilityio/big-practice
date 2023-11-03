@@ -66,6 +66,7 @@ exports[`ProductCard Component Should match snapshot 1`] = `
           >
             <button
               class="text-white text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 underline-offset-4 hover:underline dark:text-neutral-100 py-2 ease flex h-full min-w-[36px] max-w-[36px] flex-none items-center justify-center rounded-full px-2 transition-all duration-200 hover:border-neutral-800 hover:opacity-80 ml-auto"
+              disabled=""
             >
               <img
                 alt="minus-icon"
@@ -156,6 +157,7 @@ exports[`ProductCard Component Should match snapshot 1`] = `
         >
           <button
             class="text-white text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 underline-offset-4 hover:underline dark:text-neutral-100 py-2 ease flex h-full min-w-[36px] max-w-[36px] flex-none items-center justify-center rounded-full px-2 transition-all duration-200 hover:border-neutral-800 hover:opacity-80 ml-auto"
+            disabled=""
           >
             <img
               alt="minus-icon"
