@@ -19,7 +19,7 @@ exports[`Sort Product component Should match snapshot 1`] = `
             class="mt-2 flex text-white "
           >
             <button
-              class="inline-flex items-center text-white justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 dark:text-neutral-100 h-10 rounded-full font-normal p-0 text-sm underline-offset-4 hover:underline hover:text-neutral-100"
+              class="text-sm underline-offset-4 hover:underline hover:text-neutral-100"
               value="high-to-low"
             >
               High to Low
@@ -29,7 +29,7 @@ exports[`Sort Product component Should match snapshot 1`] = `
             class="mt-2 flex text-white font-bold underline"
           >
             <button
-              class="inline-flex items-center text-white justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 dark:text-neutral-100 h-10 rounded-full font-normal p-0 text-sm underline-offset-4 hover:underline hover:text-neutral-100"
+              class="text-sm underline-offset-4 hover:underline hover:text-neutral-100"
               value="low-to-high"
             >
               Low to High
@@ -54,7 +54,7 @@ exports[`Sort Product component Should match snapshot 1`] = `
           class="mt-2 flex text-white "
         >
           <button
-            class="inline-flex items-center text-white justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 dark:text-neutral-100 h-10 rounded-full font-normal p-0 text-sm underline-offset-4 hover:underline hover:text-neutral-100"
+            class="text-sm underline-offset-4 hover:underline hover:text-neutral-100"
             value="high-to-low"
           >
             High to Low
@@ -64,7 +64,7 @@ exports[`Sort Product component Should match snapshot 1`] = `
           class="mt-2 flex text-white font-bold underline"
         >
           <button
-            class="inline-flex items-center text-white justify-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 dark:text-neutral-100 h-10 rounded-full font-normal p-0 text-sm underline-offset-4 hover:underline hover:text-neutral-100"
+            class="text-sm underline-offset-4 hover:underline hover:text-neutral-100"
             value="low-to-high"
           >
             Low to High

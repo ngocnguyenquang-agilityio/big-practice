@@ -2,9 +2,6 @@
 import { memo, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
-// Components
-import { Button } from '@components/Button';
-
 type SortProducts = {
   sortCondition: Array<{ value: string; label: string }>;
   selectingItem: string;
@@ -24,14 +21,13 @@ export const SortProducts = memo(({ sortCondition = [], selectingItem, onSelectS
             className={`mt-2 flex text-white ${item.value === selectingItem ? 'font-bold underline' : ''}`}
             key={item.value}
           >
-            <Button
-              variant='link'
-              className='font-normal p-0 text-sm underline-offset-4 hover:underline hover:text-neutral-100'
+            <button
+              className='text-sm underline-offset-4 hover:underline hover:text-neutral-100'
               value={item.value}
               onClick={onSelectSort}
             >
               {item.label}
-            </Button>
+            </button>
           </li>
         ))}
       </ul>
