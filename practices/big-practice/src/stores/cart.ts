@@ -9,6 +9,7 @@ type Store = {
   isOpenCart: boolean;
   toggleCart: () => void;
   addToCart: (item: IProductCartItem) => void;
+  removeFromCart: (id: string) => void;
 };
 
 export const useCart = create<Store>((set) => ({
@@ -20,6 +21,7 @@ export const useCart = create<Store>((set) => ({
       const findItem = state.cartItems.find((it) => it.product.id === item.product.id);
       if (!!findItem) {
         const newItem = {
+          id: findItem.id,
           product: findItem.product,
           quantity: findItem.quantity + 1,
         };
@@ -29,6 +31,13 @@ export const useCart = create<Store>((set) => ({
       }
       return {
         cartItems: [...state.cartItems, item],
+      };
+    }),
+  removeFromCart: (id: string) =>
+    set((state) => {
+      const newCartItems = state.cartItems.filter((it) => it.id !== id);
+      return {
+        cartItems: newCartItems,
       };
     }),
 }));

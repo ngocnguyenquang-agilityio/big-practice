@@ -1,3 +1,6 @@
+// Stores
+import { useCart } from '@stores/cart';
+
 // Icons
 import removeIcon from '@assets/removeIcon.svg';
 
@@ -8,14 +11,19 @@ import { IProductCartItem } from '@interfaces';
 import QuantityActionButton from '@components/QuantityActionButton';
 import { Icon } from '@components/Icon';
 
-const ProductCartItem = ({ product, quantity }: IProductCartItem) => {
+const ProductCartItem = ({ id, product, quantity }: IProductCartItem) => {
+  const { removeFromCart } = useCart();
+
+  const handleRemoveFromCart = () => {
+    removeFromCart(id);
+  };
+
   return (
     <div className='relative flex w-full flex-row justify-between px-1 py-4'>
       <div className='absolute z-40 -mt-2 ml-[55px]'>
-        {/* TODO: Handle remove item from cart */}
         <button
           className='ease flex h-[17px] w-[17px] items-center justify-center rounded-full bg-neutral-500 transition-all duration-200'
-          onClick={() => {}}
+          onClick={handleRemoveFromCart}
         >
           <Icon
             svg={removeIcon}

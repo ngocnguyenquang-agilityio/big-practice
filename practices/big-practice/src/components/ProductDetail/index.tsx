@@ -1,3 +1,6 @@
+// Libs
+import { useId } from 'react';
+
 // Stores
 import { useCart } from '@stores/cart';
 
@@ -9,10 +12,12 @@ import { IProduct } from '@interfaces';
 
 const ProductDetail = ({ product }: { product: IProduct }) => {
   const { addToCart } = useCart();
+  const productCartId = useId();
 
   const handleAddToCart = () => {
     if (product) {
       addToCart({
+        id: productCartId,
         product,
         quantity: 1,
       });
