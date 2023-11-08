@@ -1,5 +1,6 @@
 // Libs
-import { memo, useEffect } from 'react';
+import useSWR from 'swr';
+import { memo } from 'react';
 
 // Stores
 import { useCartStore } from '@stores/cartStore';
@@ -13,8 +14,9 @@ import { IProductCartItem } from '@interfaces';
 // Components
 import QuantityActionButton from '@components/QuantityActionButton';
 import { Icon } from '@components/Icon/Icon';
+
+// Helpers
 import { buildQueryProductEndpoint } from '@helpers/products';
-import useSWR from 'swr';
 import { isEmpty } from '@helpers/utils';
 
 const ProductCartItem = memo(function ProductCartItemRenderer({
@@ -40,11 +42,13 @@ const ProductCartItem = memo(function ProductCartItemRenderer({
 
   const endpoint = buildQueryProductEndpoint({ productId: id });
 
-  const { data: product } = useSWR(endpoint, { keepPreviousData: true, suspense: true });
-
-  useEffect(() => {
-    updateProductInCart(product);
-  }, []);
+  const { data: product } = useSWR(endpoint, {
+    keepPreviousData: true,
+    suspense: true,
+    onSuccess: (product) => {
+      updateProductInCart(product);
+    },
+  });
 
   return (
     <div className='relative flex w-full flex-row justify-between px-1 py-4'>

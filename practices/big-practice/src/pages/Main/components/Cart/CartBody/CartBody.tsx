@@ -10,7 +10,6 @@ const CartBody = () => {
   const { cartItems } = useCartStore();
 
   const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-  
 
   return cartItems.length > 0 ? (
     <div className='flex h-full flex-col justify-between overflow-hidden p-1'>
