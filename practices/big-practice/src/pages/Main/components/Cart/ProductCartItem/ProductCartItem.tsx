@@ -1,5 +1,5 @@
 // Libs
-import { memo } from 'react';
+import { memo, useEffect } from 'react';
 
 // Stores
 import { useCartStore } from '@stores/cartStore';
@@ -13,6 +13,9 @@ import { IProductCartItem } from '@interfaces';
 // Components
 import QuantityActionButton from '@components/QuantityActionButton';
 import { Icon } from '@components/Icon/Icon';
+import { buildQueryProductEndpoint } from '@helpers/products';
+import useSWR from 'swr';
+import { isEmpty } from '@helpers/utils';
 
 const ProductCartItem = memo(function ProductCartItemRenderer({
   id,
@@ -21,7 +24,7 @@ const ProductCartItem = memo(function ProductCartItemRenderer({
   quantity,
   price,
 }: IProductCartItem) {
-  const { removeFromCart, increaseQuantity, decreaseQuantity } = useCartStore();
+  const { removeFromCart, increaseQuantity, decreaseQuantity, updateProductInCart } = useCartStore();
 
   const handleRemoveFromCart = () => {
     removeFromCart(id);
@@ -34,6 +37,14 @@ const ProductCartItem = memo(function ProductCartItemRenderer({
   const handleDecreaseQuantity = () => {
     decreaseQuantity(id);
   };
+
+  const endpoint = buildQueryProductEndpoint({ productId: id });
+
+  const { data: product } = useSWR(endpoint, { keepPreviousData: true, suspense: true });
+
+  useEffect(() => {
+    updateProductInCart(product);
+  }, []);
 
   return (
     <div className='relative flex w-full flex-row justify-between px-1 py-4'>
@@ -56,17 +67,16 @@ const ProductCartItem = memo(function ProductCartItemRenderer({
           <img
             className='h-full w-full object-cover'
             loading='lazy'
-            src={thumbnail}
+            src={isEmpty(product) ? thumbnail : product.thumbnail}
           />
         </div>
         <div className='flex flex-1 flex-col text-base'>
-          <span className='leading-tight'>{title}</span>
-          <p className='text-sm text-neutral-400'>Black / 7 x 9 inch</p>
+          <span className='leading-tight'>{isEmpty(product) ? title : product.title}</span>
         </div>
       </a>
       <div className='flex h-16 flex-col justify-between'>
         <p className='flex justify-end space-y-2 text-right text-sm'>
-          {price}
+          $ {isEmpty(product) ? price : product.price}
           <span className='ml-1 inline'>USD</span>
         </p>
         <QuantityActionButton

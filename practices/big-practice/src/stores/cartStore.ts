@@ -13,6 +13,7 @@ type CartStore = {
   removeFromCart: (id: number) => void;
   increaseQuantity: (id: number) => void;
   decreaseQuantity: (id: number) => void;
+  updateProductInCart: (product: any) => void;
 };
 
 export const useCartStore = create<CartStore, [['zustand/persist', CartStore]]>(
@@ -22,6 +23,8 @@ export const useCartStore = create<CartStore, [['zustand/persist', CartStore]]>(
       isOpenCart: false,
 
       toggleCart: () => set((state) => ({ isOpenCart: !state.isOpenCart })),
+
+      getProductById: (id: number) => set((state) => ({ cartItems: state.cartItems.filter((item) => item.id === id) })),
 
       addToCart: (productItem: IProductCartItem) =>
         set((state) => {
@@ -53,6 +56,13 @@ export const useCartStore = create<CartStore, [['zustand/persist', CartStore]]>(
       decreaseQuantity: (id: number) =>
         set((state) => ({
           cartItems: state.cartItems.map((item) => (item.id !== id ? item : { ...item, quantity: item.quantity - 1 })),
+        })),
+
+      updateProductInCart: (product: any) =>
+        set((state) => ({
+          cartItems: state.cartItems.map((item) =>
+            item.id === product.id ? { ...product, quantity: product.quantity || 1 } : item,
+          ),
         })),
     }),
     {

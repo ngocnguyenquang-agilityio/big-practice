@@ -21,7 +21,7 @@ export const ProductListContainer = () => {
 
   const endpoint = buildQueryProductEndpoint({ searchKeyword, standingPage, category });
 
-  const { data, isLoading } = useSWR(endpoint, { keepPreviousData: true });
+  const { data, isLoading } = useSWR(endpoint, { keepPreviousData: true, suspense: true });
 
   const handleChangePagination = useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {

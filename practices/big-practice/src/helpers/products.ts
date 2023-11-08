@@ -4,7 +4,7 @@ import { convertToSkip, isEmpty } from './utils';
 interface IAPIEndpoint {
   standingPage?: null | string;
   searchKeyword?: null | string;
-  productId?: null | string;
+  productId?: null | string | number;
   category?: null | string;
 }
 
@@ -19,7 +19,9 @@ export const buildQueryProductEndpoint = ({ standingPage, searchKeyword, product
       return `/search?q=${searchKeyword}`;
 
     case !isEmpty(standingPage):
-      return `?limit=9&skip=${convertToSkip(standingPage!)}&select=title,price,images,category,thumbnail,id,description`;
+      return `?limit=9&skip=${convertToSkip(
+        standingPage!,
+      )}&select=title,price,images,category,thumbnail,id,description`;
 
     case !isEmpty(category):
       return `/category/${category}`;
