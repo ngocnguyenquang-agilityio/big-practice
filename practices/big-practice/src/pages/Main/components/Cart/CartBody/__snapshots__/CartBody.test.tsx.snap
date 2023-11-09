@@ -52,11 +52,6 @@ exports[`CartBody Component Should match snapshot 1`] = `
                   >
                     Product Detail
                   </span>
-                  <p
-                    class="text-sm text-neutral-400"
-                  >
-                    Black / 7 x 9 inch
-                  </p>
                 </div>
               </a>
               <div
@@ -65,6 +60,7 @@ exports[`CartBody Component Should match snapshot 1`] = `
                 <p
                   class="flex justify-end space-y-2 text-right text-sm"
                 >
+                  $ 
                   10
                   <span
                     class="ml-1 inline"
@@ -150,11 +146,6 @@ exports[`CartBody Component Should match snapshot 1`] = `
                   >
                     Product Detail 2
                   </span>
-                  <p
-                    class="text-sm text-neutral-400"
-                  >
-                    Black / 7 x 9 inch
-                  </p>
                 </div>
               </a>
               <div
@@ -163,6 +154,7 @@ exports[`CartBody Component Should match snapshot 1`] = `
                 <p
                   class="flex justify-end space-y-2 text-right text-sm"
                 >
+                  $ 
                   20
                   <span
                     class="ml-1 inline"
@@ -314,11 +306,6 @@ exports[`CartBody Component Should match snapshot 1`] = `
                 >
                   Product Detail
                 </span>
-                <p
-                  class="text-sm text-neutral-400"
-                >
-                  Black / 7 x 9 inch
-                </p>
               </div>
             </a>
             <div
@@ -327,6 +314,7 @@ exports[`CartBody Component Should match snapshot 1`] = `
               <p
                 class="flex justify-end space-y-2 text-right text-sm"
               >
+                $ 
                 10
                 <span
                   class="ml-1 inline"
@@ -412,11 +400,6 @@ exports[`CartBody Component Should match snapshot 1`] = `
                 >
                   Product Detail 2
                 </span>
-                <p
-                  class="text-sm text-neutral-400"
-                >
-                  Black / 7 x 9 inch
-                </p>
               </div>
             </a>
             <div
@@ -425,6 +408,7 @@ exports[`CartBody Component Should match snapshot 1`] = `
               <p
                 class="flex justify-end space-y-2 text-right text-sm"
               >
+                $ 
                 20
                 <span
                   class="ml-1 inline"

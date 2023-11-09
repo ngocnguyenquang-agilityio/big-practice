@@ -44,7 +44,6 @@ const ProductCartItem = memo(function ProductCartItemRenderer({
 
   const { data: product } = useSWR(endpoint, {
     keepPreviousData: true,
-    suspense: true,
     onSuccess: (product) => {
       updateProductInCart(product);
     },
