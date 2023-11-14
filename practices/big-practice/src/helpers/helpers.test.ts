@@ -27,13 +27,13 @@ describe('Test buildQueryProductAPIEndpoint functions', () => {
 
   test('buildQueryProductAPIEndpoint with searchKeyword value', () => {
     const test = {
-      standingPage: '',
+      standingPage: '1',
       searchKeyword: 'test',
       productId: '',
       category: '',
     };
     const result = buildQueryProductEndpoint(test);
-    expect(result).toEqual('/search?q=test');
+    expect(result).toEqual('/search?q=test&limit=9&skip=0');
   });
 
   test('buildQueryProductAPIEndpoint with category value', () => {

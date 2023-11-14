@@ -10,18 +10,21 @@ import Skeleton from '@components/Skeleton/Skeleton';
 
 // Helpers
 import { buildQueryProductEndpoint } from '@helpers/products';
+import { isEmpty } from '@helpers/utils';
 
 export const ProductListContainer = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const { category = '' } = useParams();
 
   const searchKeyword = searchParams.get('search');
-  const standingPage = searchParams.get('page') || '';
+  const standingPage = searchParams.get('page') || '1';
   const sort = searchParams.get('sort') || '';
 
   const endpoint = buildQueryProductEndpoint({ searchKeyword, standingPage, category });
 
   const { data, isLoading } = useSWR(endpoint, { keepPreviousData: true, suspense: true });
+
+  const totalPage = parseInt((data.total / 9).toString()) + 1;
 
   const handleChangePagination = useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -37,20 +40,26 @@ export const ProductListContainer = () => {
       {isLoading ? (
         <Skeleton pagination={9} />
       ) : (
-        <ProductList
-          products={data?.products || []}
-          sortBy={sort}
-        />
+        <>
+          {!isEmpty(searchKeyword) && (
+            <p className='my-3'>
+              Showing <b>{data.total}</b> results for <b>"{searchKeyword}"</b>
+            </p>
+          )}
+          <ProductList
+            products={data?.products || []}
+            sortBy={sort}
+          />
+        </>
       )}
 
-      {data?.products.length !== 9 ||
-        (!searchKeyword && (
-          <Pagination
-            totalPages={4}
-            standingPage={standingPage || '1'}
-            handleChangePagination={handleChangePagination}
-          />
-        ))}
+      {data.total > 9 && (
+        <Pagination
+          totalPages={totalPage}
+          standingPage={standingPage || '1'}
+          handleChangePagination={handleChangePagination}
+        />
+      )}
     </>
   );
 };
