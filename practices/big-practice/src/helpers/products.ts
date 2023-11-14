@@ -16,7 +16,7 @@ interface IAPIEndpoint {
 export const buildQueryProductEndpoint = ({ standingPage, searchKeyword, productId, category }: IAPIEndpoint) => {
   switch (true) {
     case !isEmpty(searchKeyword):
-      return `/search?q=${searchKeyword}`;
+      return `/search?q=${searchKeyword}&limit=9&skip=${convertToSkip(standingPage!)}`;
 
     case !isEmpty(standingPage):
       return `?limit=9&skip=${convertToSkip(
