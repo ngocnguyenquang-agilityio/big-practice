@@ -38,7 +38,7 @@ export const ProductListContainer = () => {
   return (
     <>
       {isLoading ? (
-        <Skeleton pagination={9} />
+        <Skeleton pagination={9}/>
       ) : (
         <>
           {!isEmpty(searchKeyword) && (
