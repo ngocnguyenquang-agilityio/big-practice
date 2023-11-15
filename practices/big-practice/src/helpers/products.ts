@@ -12,7 +12,7 @@ import type { IProductQueryParam } from '@interfaces';
 export const buildQueryProductEndpoint = ({ standingPage, searchKeyword, productId, category }: IProductQueryParam) => {
   switch (true) {
     case !isEmpty(category):
-      return `/category/${category}`;
+      return `/category/${category}?limit=3&skip=${convertToSkip(standingPage!)}`;
 
     case !isEmpty(searchKeyword):
       return `/search?q=${searchKeyword}&limit=3&skip=${convertToSkip(standingPage!)}`;

@@ -23,7 +23,7 @@ export const debounce = <Params extends any[]>(
  * @returns {number}
  */
 export const convertToSkip = <T extends string>(value: T) => {
-  return (parseInt(value) - 1) * 9;
+  return (parseInt(value) - 1) * 3;
 };
 
 /**

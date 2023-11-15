@@ -23,7 +23,7 @@ export const ProductListContainer = () => {
 
   const { data, isLoading } = useProducts({ searchKeyword, standingPage, category }, { keepPreviousData: true });
 
-  const numberOfItemsPerPage = 9;
+  const numberOfItemsPerPage = 3;
   const totalPage = parseInt((data?.total / numberOfItemsPerPage).toString()) + 1;
 
   const handleChangePagination = useCallback(
