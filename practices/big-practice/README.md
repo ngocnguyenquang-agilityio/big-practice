@@ -53,6 +53,7 @@
 - [Jest](https://jestjs.io/docs/getting-started): Jest is a delightful JavaScript Testing Framework with a focus on simplicity
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/): The testing library family of packages helps you test UI components in a user-centric way.
 - [React Router](https://reactrouter.com/en/main): Enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL
+- [React Hook Form](https://react-hook-form.com/): Performant, flexible and extensible forms with easy-to-use validation.
 
 # Getting Started
 
