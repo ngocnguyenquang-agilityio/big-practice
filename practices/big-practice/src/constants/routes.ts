@@ -4,4 +4,5 @@ export const APP_ROUTERS = {
   CATEGORY: '/category',
   PHONE: '/category/smartphones',
   LAPTOP: '/category/laptops',
+  CHECKOUT: '/checkout',
 };

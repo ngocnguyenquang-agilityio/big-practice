@@ -25,7 +25,8 @@ export const ProductListContainer = () => {
   const { data, isLoading } = useSWR(endpoint, { keepPreviousData: true, suspense: true });
 
   const numberOfItemsPerPage = 9;
-  const totalPage = parseInt((data.total / numberOfItemsPerPage).toString()) + 1;
+  const { total, products } = data;
+  const totalPage = parseInt((total / numberOfItemsPerPage).toString()) + 1;
 
   const handleChangePagination = useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -44,17 +45,17 @@ export const ProductListContainer = () => {
         <>
           {!isEmpty(searchKeyword) && (
             <p className='my-3'>
-              Showing <b>{data.total}</b> results for <b>"{searchKeyword}"</b>
+              Showing <b>{total}</b> results for <b>"{searchKeyword}"</b>
             </p>
           )}
           <ProductList
-            products={data?.products || []}
+            products={products || []}
             sortBy={sort}
           />
         </>
       )}
 
-      {data.total > numberOfItemsPerPage && (
+      {totalPage > 1 && (
         <Pagination
           totalPages={totalPage}
           standingPage={standingPage || '1'}

@@ -67,13 +67,42 @@ describe('Test convertToSkip function', () => {
 });
 
 describe('Test isEmpty function', () => {
-  test('check the param with empty value ', () => {
-    const result = isEmpty('');
+  test('check the param with empty value', () => {
+    // Empty string
+    let result = isEmpty('');
     expect(result).toBeTruthy();
+
+    // Empty array
+    result = isEmpty([]);
+    expect(result).toBeTruthy();
+
+    // Empty object
+    result = isEmpty({});
+    expect(result).toBeTruthy();
+
+    // With null
+    result = isEmpty(null);
+    expect(result).toBeTruthy();
+
+    // Empty object
+    result = isEmpty(undefined);
+    expect(result).toBeTruthy();
+
+    // Empty number
+    result = isEmpty(0);
+    expect(result).toBeFalsy();
   });
 
-  test('check the param with empty value ', () => {
-    const result = isEmpty('test value');
+  test('check the param with value', () => {
+    let result = isEmpty('test value');
+    expect(result).toBeFalsy();
+
+    // With array
+    result = isEmpty(['123']);
+    expect(result).toBeFalsy();
+
+    // With object
+    result = isEmpty({a: 'b'});
     expect(result).toBeFalsy();
   });
 });

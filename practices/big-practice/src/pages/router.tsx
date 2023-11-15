@@ -7,11 +7,11 @@ import { APP_ROUTERS } from '@constants';
 
 // Components
 import Main from './Main/MainPage';
+import CheckoutPage from './CheckoutPage/CheckoutPage';
 import { ErrorBoundary } from '@components/ErrorBoundary/ErrorBoundary';
 
 const HomePage = lazy(() => import('./HomePage/HomePage'));
 const ProductDetailsPage = lazy(() => import('./ProductDetailsPage/ProductDetailsPage'));
-const CheckoutPage = lazy(() => import('./CheckoutPage/CheckoutPage'));
 
 export const router = createBrowserRouter([
   {
@@ -36,5 +36,6 @@ export const router = createBrowserRouter([
   {
     path: '/checkout',
     element: <CheckoutPage />,
+    errorElement: <ErrorBoundary />,
   },
 ]);

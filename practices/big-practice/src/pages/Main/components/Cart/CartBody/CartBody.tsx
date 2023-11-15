@@ -1,10 +1,16 @@
 // Stores
 import { useCartStore } from '@stores/cartStore';
 
+// Libs
+import { Link } from 'react-router-dom';
+
 // Components
 import CartEmpty from '../CartEmpty/CartEmpty';
 import { Button } from '@components/Button/Button';
 import ProductCartItemContainer from '../ProductCartItem/ProductCartItem';
+
+// Constants
+import { APP_ROUTERS } from '@constants';
 
 const CartBody = () => {
   const { cartItems } = useCartStore();
@@ -42,7 +48,9 @@ const CartBody = () => {
             <span className='ml-1 inline'>USD</span>
           </p>
         </div>
-        <Button size='xl'>Proceed to Checkout</Button>
+        <Link to={APP_ROUTERS.CHECKOUT}>
+          <Button size='xl'>Proceed to Checkout</Button>
+        </Link>
       </div>
     </div>
   ) : (

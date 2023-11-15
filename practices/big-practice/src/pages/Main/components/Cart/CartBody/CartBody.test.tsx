@@ -1,4 +1,6 @@
+// Libs
 import { RenderResult, render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 
 // Components
 import CartBody from './CartBody';
@@ -32,7 +34,11 @@ describe('CartBody Component', () => {
         },
       ],
     });
-    comp = render(<CartBody />);
+    comp = render(
+      <MemoryRouter>
+        <CartBody />
+      </MemoryRouter>,
+    );
   });
   test('Should render correctly', () => {
     expect(comp).toBeTruthy();

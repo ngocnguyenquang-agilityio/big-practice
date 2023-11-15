@@ -255,11 +255,15 @@ exports[`CartBody Component Should match snapshot 1`] = `
               </span>
             </p>
           </div>
-          <button
-            class="inline-flex items-center text-white justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 bg-blue-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 w-full h-11 rounded-full"
+          <a
+            href="/checkout"
           >
-            Proceed to Checkout
-          </button>
+            <button
+              class="inline-flex items-center text-white justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 bg-blue-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 w-full h-11 rounded-full"
+            >
+              Proceed to Checkout
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -515,11 +519,15 @@ exports[`CartBody Component Should match snapshot 1`] = `
             </span>
           </p>
         </div>
-        <button
-          class="inline-flex items-center text-white justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 bg-blue-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 w-full h-11 rounded-full"
+        <a
+          href="/checkout"
         >
-          Proceed to Checkout
-        </button>
+          <button
+            class="inline-flex items-center text-white justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 bg-blue-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 w-full h-11 rounded-full"
+          >
+            Proceed to Checkout
+          </button>
+        </a>
       </div>
     </div>
   </div>,
