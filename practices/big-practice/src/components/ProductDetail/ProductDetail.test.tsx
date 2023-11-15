@@ -1,7 +1,7 @@
 import { RenderResult, render } from '@testing-library/react';
 
 // Components
-import ProductDetail from '.';
+import ProductDetail from './ProductDetail';
 
 // Mocks
 import { mockProduct } from '@mocks';

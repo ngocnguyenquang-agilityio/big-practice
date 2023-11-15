@@ -18,6 +18,7 @@ export default {
     '@constants': '<rootDir>/src/constants',
     '@stores/(.*)': '<rootDir>/src/stores/$1',
     '@mocks': '<rootDir>/src/mocks',
+    '@hooks/(.*)': '<rootDir>/src/hooks/$1',
   },
   roots: ['<rootDir>/src'],
   testEnvironment: 'jest-environment-jsdom',

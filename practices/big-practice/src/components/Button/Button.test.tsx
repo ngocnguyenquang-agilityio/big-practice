@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 
 // Components
-import { Button } from '.';
+import { Button } from './Button';
 
 // Button is get from library so it is completely tested
 describe('Button Component', () => {

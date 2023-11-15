@@ -1,7 +1,7 @@
 import { RenderResult, render, within } from '@testing-library/react';
 
 // Components
-import Skeleton from '.';
+import Skeleton from './Skeleton';
 
 const props = {
   pagination: 2,

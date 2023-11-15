@@ -1,7 +1,7 @@
 import { MemoryRouter } from 'react-router-dom';
 import { RenderResult, render } from '@testing-library/react';
 
-import MainLayout from '.';
+import MainLayout from './MainLayout';
 
 const MockHeader = () => <div>Header</div>;
 const MockFooter = () => <div>Footer</div>;

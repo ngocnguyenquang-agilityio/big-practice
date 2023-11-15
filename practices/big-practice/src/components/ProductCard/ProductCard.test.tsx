@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 
 // Components
-import ProductCard from '.';
+import ProductCard from './ProductCard';
 
 // Types
 import type { ProductCard as IProductCard } from '@interfaces';

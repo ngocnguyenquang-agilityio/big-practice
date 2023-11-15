@@ -1,7 +1,7 @@
 import { RenderResult, render } from '@testing-library/react';
 
 // Components
-import HomeLayout from '.';
+import HomeLayout from './HomeLayout';
 
 const MockLeftAside = () => <div>Left Aside</div>;
 const MockRightAside = () => <div>Right Aside</div>;

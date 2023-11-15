@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard Component Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="relative flex w-full flex-row justify-between px-1 py-4"
+      >
+        <div
+          class="absolute z-40 -mt-2 ml-[55px]"
+        >
+          <button
+            class="ease flex h-[17px] w-[17px] items-center justify-center rounded-full bg-neutral-500 transition-all duration-200"
+          >
+            <img
+              alt="remove-icon"
+              height="16"
+              src=""
+              width="16"
+            />
+          </button>
+        </div>
+        <div
+          class="z-30 flex flex-row space-x-4"
+        >
+          <div
+            class="relative h-16 w-16 cursor-pointer overflow-hidden rounded-md border border-neutral-700 bg-neutral-900 hover:bg-neutral-800"
+          >
+            <img
+              alt="Product 1-thumbnail"
+              class="h-full w-full object-cover"
+              data-testid="item-thumbnail"
+              loading="lazy"
+              src="https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Ft-shirt-1.png%3Fv%3D1689798965&w=3840&q=75"
+            />
+          </div>
+          <div
+            class="flex flex-1 flex-col text-base"
+            data-testid="item-title"
+          >
+            <span
+              class="leading-tight"
+            >
+              Product 1
+            </span>
+          </div>
+        </div>
+        <div
+          class="flex h-16 flex-col justify-between"
+        >
+          <p
+            class="flex justify-end space-y-2 text-right text-sm"
+            data-testid="item-price"
+          >
+            $ 
+            20
+            <span
+              class="ml-1 inline"
+            >
+              USD
+            </span>
+          </p>
+          <div
+            class="ml-auto flex h-9 flex-row items-center rounded-full border border-neutral-700"
+          >
+            <button
+              class="text-white text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 underline-offset-4 hover:underline dark:text-neutral-100 py-2 ease flex h-full min-w-[36px] max-w-[36px] flex-none items-center justify-center rounded-full px-2 transition-all duration-200 hover:border-neutral-800 hover:opacity-80 ml-auto cursor-not-allowed"
+              disabled=""
+            >
+              <img
+                alt="minus-icon"
+                height="16"
+                src=""
+                width="16"
+              />
+            </button>
+            <p
+              class="w-6 text-center"
+            >
+              <span
+                class="w-full text-sm text-white"
+              >
+                1
+              </span>
+            </p>
+            <button
+              class="text-white text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 underline-offset-4 hover:underline dark:text-neutral-100 py-2 ease flex h-full min-w-[36px] max-w-[36px] flex-none items-center justify-center rounded-full px-2 transition-all duration-200 hover:border-neutral-800 hover:opacity-80"
+            >
+              <img
+                alt="plus-icon"
+                height="16"
+                src=""
+                width="16"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="relative flex w-full flex-row justify-between px-1 py-4"
+    >
+      <div
+        class="absolute z-40 -mt-2 ml-[55px]"
+      >
+        <button
+          class="ease flex h-[17px] w-[17px] items-center justify-center rounded-full bg-neutral-500 transition-all duration-200"
+        >
+          <img
+            alt="remove-icon"
+            height="16"
+            src=""
+            width="16"
+          />
+        </button>
+      </div>
+      <div
+        class="z-30 flex flex-row space-x-4"
+      >
+        <div
+          class="relative h-16 w-16 cursor-pointer overflow-hidden rounded-md border border-neutral-700 bg-neutral-900 hover:bg-neutral-800"
+        >
+          <img
+            alt="Product 1-thumbnail"
+            class="h-full w-full object-cover"
+            data-testid="item-thumbnail"
+            loading="lazy"
+            src="https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Ft-shirt-1.png%3Fv%3D1689798965&w=3840&q=75"
+          />
+        </div>
+        <div
+          class="flex flex-1 flex-col text-base"
+          data-testid="item-title"
+        >
+          <span
+            class="leading-tight"
+          >
+            Product 1
+          </span>
+        </div>
+      </div>
+      <div
+        class="flex h-16 flex-col justify-between"
+      >
+        <p
+          class="flex justify-end space-y-2 text-right text-sm"
+          data-testid="item-price"
+        >
+          $ 
+          20
+          <span
+            class="ml-1 inline"
+          >
+            USD
+          </span>
+        </p>
+        <div
+          class="ml-auto flex h-9 flex-row items-center rounded-full border border-neutral-700"
+        >
+          <button
+            class="text-white text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 underline-offset-4 hover:underline dark:text-neutral-100 py-2 ease flex h-full min-w-[36px] max-w-[36px] flex-none items-center justify-center rounded-full px-2 transition-all duration-200 hover:border-neutral-800 hover:opacity-80 ml-auto cursor-not-allowed"
+            disabled=""
+          >
+            <img
+              alt="minus-icon"
+              height="16"
+              src=""
+              width="16"
+            />
+          </button>
+          <p
+            class="w-6 text-center"
+          >
+            <span
+              class="w-full text-sm text-white"
+            >
+              1
+            </span>
+          </p>
+          <button
+            class="text-white text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 underline-offset-4 hover:underline dark:text-neutral-100 py-2 ease flex h-full min-w-[36px] max-w-[36px] flex-none items-center justify-center rounded-full px-2 transition-all duration-200 hover:border-neutral-800 hover:opacity-80"
+          >
+            <img
+              alt="plus-icon"
+              height="16"
+              src=""
+              width="16"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

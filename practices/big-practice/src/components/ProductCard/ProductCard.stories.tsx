@@ -2,7 +2,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 // Components
-import ProductCard from '.';
+import ProductCard from './ProductCard';
 
 const meta = {
   title: 'Components/ProductCard',

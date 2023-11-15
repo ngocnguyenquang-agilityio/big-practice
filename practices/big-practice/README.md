@@ -2,6 +2,8 @@
 
 - This document provides information about React Practice
 - [Documentation details](https://docs.google.com/document/d/1EbAyzRCHAkfTcfHfmZjkQ0wwMqUAxY0BO4Yk0B55Gs0/edit#heading=h.ar0k1bmftkqn)
+- Deploy link: [link](https://react-big-practice-ngocnguyen.vercel.app/)
+- Storybook Deploy link: [link](https://big-practice-ngocnguyenquang.vercel.app/?path=/story/components-button--default)
 
 ## Table of Contents
 

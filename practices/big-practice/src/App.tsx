@@ -6,7 +6,7 @@ import { SWRConfig } from 'swr';
 import { fetcher } from '@services/fetcher';
 
 // Router
-import { router } from './router';
+import { router } from '@pages/router';
 
 function App() {
   return (

@@ -3,7 +3,7 @@ import { withRouter } from 'storybook-addon-react-router-v6';
 import type { Meta, StoryObj } from '@storybook/react';
 
 // Components
-import ProductList from '.';
+import ProductList from './ProductList';
 
 // Mocks
 import { mockProducts } from '../../mocks';

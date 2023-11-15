@@ -1,9 +1,9 @@
 // Types
 import type { Meta, StoryObj } from '@storybook/react';
-import type { ButtonProps } from '.';
+import type { ButtonProps } from './Button';
 
 // Components
-import { Button } from '.'
+import { Button } from './Button'
 
 export default {
   title: 'Components/Button',

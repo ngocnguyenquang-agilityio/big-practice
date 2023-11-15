@@ -1,0 +1,390 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShippingForm component Should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex items-center justify-center border border-neutral-700 bg-black h-[50px] w-[50px] rounded-xl"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="logo-icon"
+            height="30"
+            src=""
+            width="30"
+          />
+        </a>
+      </div>
+      <form>
+        <fieldset
+          class="mt-6"
+        >
+          <legend
+            class="text-lg font-bold mb-2"
+          >
+            Contact
+          </legend>
+          <label
+            class="block mb-2 text-sm font-medium text-neutral-400"
+            for="phone-number"
+          >
+            Phone
+          </label>
+          <input
+            class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+            id="phone-number"
+            placeholder="Phone number"
+            type="text"
+            value=""
+          />
+        </fieldset>
+        <fieldset
+          class="mt-6"
+        >
+          <legend
+            class="text-lg font-bold mb-2"
+          >
+            Shipping address
+          </legend>
+          <div
+            class="mb-4"
+          >
+            <label
+              class="block mb-2 text-sm font-medium text-neutral-400"
+              for="email"
+            >
+              Your email
+            </label>
+            <input
+              class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+              id="email"
+              placeholder="name@flowbite.com"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="grid md:grid-cols-2 md:gap-6"
+          >
+            <div
+              class="relative z-0 w-full mb-4 group"
+            >
+              <label
+                class="block mb-2 text-sm font-medium text-neutral-400"
+                for="first-name"
+              >
+                First name
+              </label>
+              <input
+                class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+                id="first-name"
+                placeholder="First name"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="relative z-0 w-full mb-4 group"
+            >
+              <label
+                class="block mb-2 text-sm font-medium text-neutral-400"
+                for="last-name"
+              >
+                Last name
+              </label>
+              <input
+                class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+                id="last-name"
+                placeholder="Last name"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="mb-6"
+          >
+            <label
+              class="block mb-2 text-sm font-medium text-neutral-400"
+              for="address"
+            >
+              Address
+            </label>
+            <input
+              class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+              id="address"
+              placeholder="Address"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="mb-6"
+          >
+            <label
+              class="block mb-2 text-sm font-medium text-neutral-400"
+              for="apartment"
+            >
+              Apartment
+            </label>
+            <input
+              class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 py-3"
+              id="apartment"
+              placeholder="Apartment"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="mb-6"
+          >
+            <label
+              class="block mb-2 text-sm font-medium text-neutral-400"
+              for="city"
+            >
+              City
+            </label>
+            <input
+              class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+              id="city"
+              placeholder="City"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="flex justify-end"
+          >
+            <button
+              class="inline-flex items-center text-white justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 bg-blue-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 h-11 px-5 py-8 rounded-md"
+              type="submit"
+            >
+              Continue to shipping
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex items-center justify-center border border-neutral-700 bg-black h-[50px] w-[50px] rounded-xl"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="logo-icon"
+          height="30"
+          src=""
+          width="30"
+        />
+      </a>
+    </div>
+    <form>
+      <fieldset
+        class="mt-6"
+      >
+        <legend
+          class="text-lg font-bold mb-2"
+        >
+          Contact
+        </legend>
+        <label
+          class="block mb-2 text-sm font-medium text-neutral-400"
+          for="phone-number"
+        >
+          Phone
+        </label>
+        <input
+          class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+          id="phone-number"
+          placeholder="Phone number"
+          type="text"
+          value=""
+        />
+      </fieldset>
+      <fieldset
+        class="mt-6"
+      >
+        <legend
+          class="text-lg font-bold mb-2"
+        >
+          Shipping address
+        </legend>
+        <div
+          class="mb-4"
+        >
+          <label
+            class="block mb-2 text-sm font-medium text-neutral-400"
+            for="email"
+          >
+            Your email
+          </label>
+          <input
+            class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+            id="email"
+            placeholder="name@flowbite.com"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="grid md:grid-cols-2 md:gap-6"
+        >
+          <div
+            class="relative z-0 w-full mb-4 group"
+          >
+            <label
+              class="block mb-2 text-sm font-medium text-neutral-400"
+              for="first-name"
+            >
+              First name
+            </label>
+            <input
+              class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+              id="first-name"
+              placeholder="First name"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="relative z-0 w-full mb-4 group"
+          >
+            <label
+              class="block mb-2 text-sm font-medium text-neutral-400"
+              for="last-name"
+            >
+              Last name
+            </label>
+            <input
+              class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+              id="last-name"
+              placeholder="Last name"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="mb-6"
+        >
+          <label
+            class="block mb-2 text-sm font-medium text-neutral-400"
+            for="address"
+          >
+            Address
+          </label>
+          <input
+            class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+            id="address"
+            placeholder="Address"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="mb-6"
+        >
+          <label
+            class="block mb-2 text-sm font-medium text-neutral-400"
+            for="apartment"
+          >
+            Apartment
+          </label>
+          <input
+            class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 py-3"
+            id="apartment"
+            placeholder="Apartment"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="mb-6"
+        >
+          <label
+            class="block mb-2 text-sm font-medium text-neutral-400"
+            for="city"
+          >
+            City
+          </label>
+          <input
+            class="w-full rounded-lg border border-neutral-800 bg-transparent px-4 text-sm text-white placeholder:text-neutral-400 focus:outline-none focus:border-blue-600 py-3"
+            id="city"
+            placeholder="City"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="flex justify-end"
+        >
+          <button
+            class="inline-flex items-center text-white justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ring-offset-slate-950 focus-visible:ring-slate-300 bg-blue-600 hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 h-11 px-5 py-8 rounded-md"
+            type="submit"
+          >
+            Continue to shipping
+          </button>
+        </div>
+      </fieldset>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

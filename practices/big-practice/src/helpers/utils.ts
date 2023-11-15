@@ -31,6 +31,11 @@ export const convertToSkip = <T extends string>(value: T) => {
  * @param value
  * @returns
  */
-export const isEmpty = (value: string | null | undefined) => {
-  return !value || value.length === 0;
+export const isEmpty = (value: unknown) => {
+  return (
+    value === undefined ||
+    value === null ||
+    (typeof value === 'object' && Object.keys(value).length === 0) ||
+    (typeof value === 'string' && value.trim().length === 0)
+  );
 };

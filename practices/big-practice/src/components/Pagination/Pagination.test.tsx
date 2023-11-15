@@ -1,7 +1,7 @@
 import { RenderResult, fireEvent, render, screen } from '@testing-library/react';
 
 // Components
-import Pagination from '.';
+import Pagination from './Pagination';
 
 const props = {
   totalPages: 4,

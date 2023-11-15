@@ -2,7 +2,7 @@ import { RenderResult, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 
 // Component
-import ProductList from '.';
+import ProductList from './ProductList';
 
 // Mocks
 import { mockProducts } from '@mocks';
@@ -30,6 +30,6 @@ describe('ProductList Component', () => {
 
   test('Should render correct number of items in list', async () => {
     const items = await screen.getByTestId('product-list');
-    expect(items.children).toHaveLength(3);
+    expect(items.children).toHaveLength(mockProducts.length);
   });
 });

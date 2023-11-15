@@ -3,8 +3,8 @@ import minusIcon from '@assets/minusIcon.svg';
 import plusIcon from '@assets/plusIcon.svg';
 
 // Components
-import { Button } from '@components/Button';
-import { Icon } from '@components/Icon';
+import { Button } from '@components/Button/Button';
+import { Icon } from '@components/Icon/Icon';
 
 // Types
 import { IQuantityActionButton } from '@interfaces';

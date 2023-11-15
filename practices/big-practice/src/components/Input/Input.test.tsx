@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react';
 
 // Components
-import { Input } from '.';
+import { Input } from './Input';
 
-// Input is get from library so it is completely tested 
+// Input is get from library so it is completely tested
 describe('Button Component', () => {
   test('Should render successfully', () => {
     const comp = render(<Input />);

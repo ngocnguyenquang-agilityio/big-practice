@@ -7,3 +7,10 @@ export interface IProduct {
   thumbnail: string;
   description?: string;
 }
+
+export interface IProductQueryParam {
+  standingPage?: string;
+  searchKeyword?: string;
+  productId?: string | number;
+  category?: string;
+}

@@ -2,7 +2,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 // Components
-import ProductDetail from '.';
+import ProductDetail from './ProductDetail';
 
 const meta = {
   title: 'Components/ProductDetail',

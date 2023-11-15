@@ -13,6 +13,7 @@ type CartStore = {
   removeFromCart: (id: number) => void;
   increaseQuantity: (id: number) => void;
   decreaseQuantity: (id: number) => void;
+  updateProductInCart: (product: IProductCartItem) => void;
 };
 
 export const useCartStore = create<CartStore, [['zustand/persist', CartStore]]>(
@@ -53,6 +54,13 @@ export const useCartStore = create<CartStore, [['zustand/persist', CartStore]]>(
       decreaseQuantity: (id: number) =>
         set((state) => ({
           cartItems: state.cartItems.map((item) => (item.id !== id ? item : { ...item, quantity: item.quantity - 1 })),
+        })),
+
+      updateProductInCart: (product: IProductCartItem) =>
+        set((state) => ({
+          cartItems: state.cartItems.map((item) =>
+            item.id === product.id ? { ...product, quantity: item.quantity || 1 } : item,
+          ),
         })),
     }),
     {

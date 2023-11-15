@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 
 // Components
-import Loading from '.';
+import Loading from './Loading';
 
 describe('Pagination Component', () => {
   test('Should render successfully', () => {

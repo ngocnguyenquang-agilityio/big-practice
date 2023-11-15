@@ -4,7 +4,7 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 // Components
-import Loading from '.';
+import Loading from './Loading';
 
 const meta = {
   title: 'Components/Loading',

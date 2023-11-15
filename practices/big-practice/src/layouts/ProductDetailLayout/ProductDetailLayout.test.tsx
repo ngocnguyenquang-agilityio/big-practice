@@ -1,7 +1,7 @@
 import { RenderResult, render } from '@testing-library/react';
 
 // Components
-import ProductDetailLayout from '.';
+import ProductDetailLayout from './ProductDetailLayout';
 
 const ProductDetail = () => <div>Product Detail</div>;
 const RelatedProduct = () => <div>Related Product</div>;
