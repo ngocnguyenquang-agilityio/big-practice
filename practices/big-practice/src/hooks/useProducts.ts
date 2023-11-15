@@ -1,12 +1,15 @@
 // Libs
 import useSWR from 'swr';
 
-export const useProducts = (endpoint: string) => {
-  const { data, isLoading } = useSWR(endpoint, { keepPreviousData: true, suspense: true });
+// Helpers
+import { buildQueryProductEndpoint } from '@helpers/products';
 
-  return {
-    products: data.products,
-    total: data.total,
-    isLoading,
-  };
+// Types
+import type { IProductQueryParam } from '@interfaces';
+
+export const useProducts = (params: IProductQueryParam, options = {}) => {
+  const endpoint = buildQueryProductEndpoint(params);
+  const response = useSWR(endpoint, options);
+
+  return response;
 };

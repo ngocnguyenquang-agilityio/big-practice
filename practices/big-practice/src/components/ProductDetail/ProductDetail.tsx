@@ -26,8 +26,11 @@ const ProductDetail = ({ product }: { product: IProduct }) => {
         <div className='relative h-full max-h-[500px] w-full overflow-hidden flex items-center justify-between mx-auto'>
           <img
             src={product.thumbnail}
+            width={600}
+            height={500}
             className='object-cover w-[600px] h-[500px]'
             alt={`${product.title} - ${product.category}`}
+            loading='lazy'
           />
         </div>
         <ul className='my-12 flex items-center justify-center gap-2 overflow-auto py-1 lg:mb-0'>

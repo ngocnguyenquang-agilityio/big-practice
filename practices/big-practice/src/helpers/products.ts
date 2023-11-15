@@ -1,19 +1,15 @@
 // Helpers
 import { convertToSkip, isEmpty } from './utils';
 
-interface IAPIEndpoint {
-  standingPage?: null | string;
-  searchKeyword?: null | string;
-  productId?: null | string | number;
-  category?: null | string;
-}
+// Types
+import type { IProductQueryParam } from '@interfaces';
 
 /**
  * Build products query endpoint
  * @param {IAPIEndpoint}
  * @returns {string}
  */
-export const buildQueryProductEndpoint = ({ standingPage, searchKeyword, productId, category }: IAPIEndpoint) => {
+export const buildQueryProductEndpoint = ({ standingPage, searchKeyword, productId, category }: IProductQueryParam) => {
   switch (true) {
     case !isEmpty(category):
       return `/category/${category}`;

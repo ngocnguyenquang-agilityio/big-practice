@@ -1,5 +1,4 @@
 // Libs
-import useSWR from 'swr';
 import { memo } from 'react';
 
 // Stores
@@ -16,8 +15,10 @@ import QuantityActionButton from '@components/QuantityActionButton';
 import { Icon } from '@components/Icon/Icon';
 
 // Helpers
-import { buildQueryProductEndpoint } from '@helpers/products';
 import { isEmpty } from '@helpers/utils';
+
+// Hooks
+import { useProducts } from '@hooks/useProducts';
 
 interface ProductCartItemProps extends IProductCartItem {
   handleRemoveFromCart: () => void;
@@ -85,11 +86,13 @@ export const ProductCartItem = memo(function ProductCartItemRenderer({
 const ProductCartItemContainer = ({ id, quantity, price, title, thumbnail }: IProductCartItem) => {
   const { removeFromCart, increaseQuantity, decreaseQuantity, updateProductInCart } = useCartStore();
 
-  const endpoint = buildQueryProductEndpoint({ productId: id });
-  const { data: product } = useSWR(endpoint, {
-    keepPreviousData: true,
-    onSuccess: updateProductInCart,
-  });
+  const { data: product } = useProducts(
+    { productId: id },
+    {
+      keepPreviousData: true,
+      onSuccess: updateProductInCart,
+    },
+  );
 
   const handleRemoveFromCart = () => {
     removeFromCart(id);

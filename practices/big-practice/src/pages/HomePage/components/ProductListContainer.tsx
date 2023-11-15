@@ -8,7 +8,6 @@ import ProductList from '@components/ProductList/ProductList';
 import Skeleton from '@components/Skeleton/Skeleton';
 
 // Helpers
-import { buildQueryProductEndpoint } from '@helpers/products';
 import { isEmpty } from '@helpers/utils';
 
 // Hooks
@@ -18,15 +17,14 @@ export const ProductListContainer = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const { category = '' } = useParams();
 
-  const searchKeyword = searchParams.get('search');
+  const searchKeyword = searchParams.get('search') || '';
   const standingPage = searchParams.get('page') || '1';
   const sort = searchParams.get('sort') || '';
 
-  const endpoint = buildQueryProductEndpoint({ searchKeyword, standingPage, category });
-  const { products, total, isLoading } = useProducts(endpoint);
+  const { data, isLoading } = useProducts({ searchKeyword, standingPage, category }, { keepPreviousData: true });
 
   const numberOfItemsPerPage = 9;
-  const totalPage = parseInt((total / numberOfItemsPerPage).toString()) + 1;
+  const totalPage = parseInt((data?.total / numberOfItemsPerPage).toString()) + 1;
 
   const handleChangePagination = useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -45,11 +43,11 @@ export const ProductListContainer = () => {
         <>
           {!isEmpty(searchKeyword) && (
             <p className='my-3'>
-              Showing <b>{total}</b> results for <b>"{searchKeyword}"</b>
+              Showing <b>{data?.total}</b> results for <b>"{searchKeyword}"</b>
             </p>
           )}
           <ProductList
-            products={products || []}
+            products={data?.products || []}
             sortBy={sort}
           />
         </>
