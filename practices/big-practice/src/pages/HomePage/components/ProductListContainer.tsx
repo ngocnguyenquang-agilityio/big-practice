@@ -24,7 +24,8 @@ export const ProductListContainer = () => {
 
   const { data, isLoading } = useSWR(endpoint, { keepPreviousData: true, suspense: true });
 
-  const totalPage = parseInt((data.total / 9).toString()) + 1;
+  const numberOfItemsPerPage = 9;
+  const totalPage = parseInt((data.total / numberOfItemsPerPage).toString()) + 1;
 
   const handleChangePagination = useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -38,7 +39,7 @@ export const ProductListContainer = () => {
   return (
     <>
       {isLoading ? (
-        <Skeleton pagination={9}/>
+        <Skeleton pagination={numberOfItemsPerPage} />
       ) : (
         <>
           {!isEmpty(searchKeyword) && (
@@ -53,7 +54,7 @@ export const ProductListContainer = () => {
         </>
       )}
 
-      {data.total > 9 && (
+      {data.total > numberOfItemsPerPage && (
         <Pagination
           totalPages={totalPage}
           standingPage={standingPage || '1'}

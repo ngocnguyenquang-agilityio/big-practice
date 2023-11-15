@@ -144,6 +144,276 @@ exports[`ProductListContainer Should render correctly 1`] = `
             </div>
           </a>
         </li>
+        <li
+          class="aspect-square transition-opacity animate-fadeIn"
+        >
+          <a
+            href="/product/4"
+          >
+            <div
+              class="relative inline-block h-full w-full"
+            >
+              <div
+                class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+              >
+                <img
+                  alt="OPPOF19"
+                  class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                  loading="lazy"
+                  src="https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+                />
+                <div
+                  class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+                >
+                  <div
+                    class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                  >
+                    <h3
+                      class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                    >
+                      OPPOF19
+                    </h3>
+                    <p
+                      class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                    >
+                      280
+                      <span
+                        class="ml-1 inline @[275px]/label:inline"
+                      >
+                        USD
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li
+          class="aspect-square transition-opacity animate-fadeIn"
+        >
+          <a
+            href="/product/5"
+          >
+            <div
+              class="relative inline-block h-full w-full"
+            >
+              <div
+                class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+              >
+                <img
+                  alt="Huawei P30"
+                  class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                  loading="lazy"
+                  src="https://i.dummyjson.com/data/products/5/thumbnail.jpg"
+                />
+                <div
+                  class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+                >
+                  <div
+                    class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                  >
+                    <h3
+                      class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                    >
+                      Huawei P30
+                    </h3>
+                    <p
+                      class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                    >
+                      499
+                      <span
+                        class="ml-1 inline @[275px]/label:inline"
+                      >
+                        USD
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li
+          class="aspect-square transition-opacity animate-fadeIn"
+        >
+          <a
+            href="/product/6"
+          >
+            <div
+              class="relative inline-block h-full w-full"
+            >
+              <div
+                class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+              >
+                <img
+                  alt="MacBook Pro"
+                  class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                  loading="lazy"
+                  src="https://i.dummyjson.com/data/products/6/thumbnail.png"
+                />
+                <div
+                  class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+                >
+                  <div
+                    class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                  >
+                    <h3
+                      class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                    >
+                      MacBook Pro
+                    </h3>
+                    <p
+                      class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                    >
+                      1749
+                      <span
+                        class="ml-1 inline @[275px]/label:inline"
+                      >
+                        USD
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li
+          class="aspect-square transition-opacity animate-fadeIn"
+        >
+          <a
+            href="/product/7"
+          >
+            <div
+              class="relative inline-block h-full w-full"
+            >
+              <div
+                class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+              >
+                <img
+                  alt="Samsung Galaxy Book"
+                  class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                  loading="lazy"
+                  src="https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+                />
+                <div
+                  class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+                >
+                  <div
+                    class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                  >
+                    <h3
+                      class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                    >
+                      Samsung Galaxy Book
+                    </h3>
+                    <p
+                      class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                    >
+                      1499
+                      <span
+                        class="ml-1 inline @[275px]/label:inline"
+                      >
+                        USD
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li
+          class="aspect-square transition-opacity animate-fadeIn"
+        >
+          <a
+            href="/product/8"
+          >
+            <div
+              class="relative inline-block h-full w-full"
+            >
+              <div
+                class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+              >
+                <img
+                  alt="Microsoft Surface Laptop 4"
+                  class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                  loading="lazy"
+                  src="https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+                />
+                <div
+                  class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+                >
+                  <div
+                    class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                  >
+                    <h3
+                      class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                    >
+                      Microsoft Surface Laptop 4
+                    </h3>
+                    <p
+                      class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                    >
+                      1499
+                      <span
+                        class="ml-1 inline @[275px]/label:inline"
+                      >
+                        USD
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li
+          class="aspect-square transition-opacity animate-fadeIn"
+        >
+          <a
+            href="/product/9"
+          >
+            <div
+              class="relative inline-block h-full w-full"
+            >
+              <div
+                class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+              >
+                <img
+                  alt="Infinix INBOOK"
+                  class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                  loading="lazy"
+                  src="https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+                />
+                <div
+                  class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+                >
+                  <div
+                    class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                  >
+                    <h3
+                      class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                    >
+                      Infinix INBOOK
+                    </h3>
+                    <p
+                      class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                    >
+                      1099
+                      <span
+                        class="ml-1 inline @[275px]/label:inline"
+                      >
+                        USD
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
       </ul>
       <nav
         class="pt-4 flex justify-end"
@@ -300,6 +570,276 @@ exports[`ProductListContainer Should render correctly 1`] = `
                     class="flex-none rounded-full bg-blue-600 p-2 text-white"
                   >
                     1249
+                    <span
+                      class="ml-1 inline @[275px]/label:inline"
+                    >
+                      USD
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li
+        class="aspect-square transition-opacity animate-fadeIn"
+      >
+        <a
+          href="/product/4"
+        >
+          <div
+            class="relative inline-block h-full w-full"
+          >
+            <div
+              class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+            >
+              <img
+                alt="OPPOF19"
+                class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                loading="lazy"
+                src="https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+              />
+              <div
+                class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+              >
+                <div
+                  class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                >
+                  <h3
+                    class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                  >
+                    OPPOF19
+                  </h3>
+                  <p
+                    class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                  >
+                    280
+                    <span
+                      class="ml-1 inline @[275px]/label:inline"
+                    >
+                      USD
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li
+        class="aspect-square transition-opacity animate-fadeIn"
+      >
+        <a
+          href="/product/5"
+        >
+          <div
+            class="relative inline-block h-full w-full"
+          >
+            <div
+              class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+            >
+              <img
+                alt="Huawei P30"
+                class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                loading="lazy"
+                src="https://i.dummyjson.com/data/products/5/thumbnail.jpg"
+              />
+              <div
+                class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+              >
+                <div
+                  class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                >
+                  <h3
+                    class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                  >
+                    Huawei P30
+                  </h3>
+                  <p
+                    class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                  >
+                    499
+                    <span
+                      class="ml-1 inline @[275px]/label:inline"
+                    >
+                      USD
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li
+        class="aspect-square transition-opacity animate-fadeIn"
+      >
+        <a
+          href="/product/6"
+        >
+          <div
+            class="relative inline-block h-full w-full"
+          >
+            <div
+              class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+            >
+              <img
+                alt="MacBook Pro"
+                class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                loading="lazy"
+                src="https://i.dummyjson.com/data/products/6/thumbnail.png"
+              />
+              <div
+                class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+              >
+                <div
+                  class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                >
+                  <h3
+                    class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                  >
+                    MacBook Pro
+                  </h3>
+                  <p
+                    class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                  >
+                    1749
+                    <span
+                      class="ml-1 inline @[275px]/label:inline"
+                    >
+                      USD
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li
+        class="aspect-square transition-opacity animate-fadeIn"
+      >
+        <a
+          href="/product/7"
+        >
+          <div
+            class="relative inline-block h-full w-full"
+          >
+            <div
+              class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+            >
+              <img
+                alt="Samsung Galaxy Book"
+                class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                loading="lazy"
+                src="https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+              />
+              <div
+                class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+              >
+                <div
+                  class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                >
+                  <h3
+                    class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                  >
+                    Samsung Galaxy Book
+                  </h3>
+                  <p
+                    class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                  >
+                    1499
+                    <span
+                      class="ml-1 inline @[275px]/label:inline"
+                    >
+                      USD
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li
+        class="aspect-square transition-opacity animate-fadeIn"
+      >
+        <a
+          href="/product/8"
+        >
+          <div
+            class="relative inline-block h-full w-full"
+          >
+            <div
+              class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+            >
+              <img
+                alt="Microsoft Surface Laptop 4"
+                class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                loading="lazy"
+                src="https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+              />
+              <div
+                class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+              >
+                <div
+                  class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                >
+                  <h3
+                    class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                  >
+                    Microsoft Surface Laptop 4
+                  </h3>
+                  <p
+                    class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                  >
+                    1499
+                    <span
+                      class="ml-1 inline @[275px]/label:inline"
+                    >
+                      USD
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li
+        class="aspect-square transition-opacity animate-fadeIn"
+      >
+        <a
+          href="/product/9"
+        >
+          <div
+            class="relative inline-block h-full w-full"
+          >
+            <div
+              class="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-blue-600 bg-black relative border-neutral-800"
+            >
+              <img
+                alt="Infinix INBOOK"
+                class="relative h-full w-full object-cover transition duration-300 ease-in-out group-hover:scale-105"
+                loading="lazy"
+                src="https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+              />
+              <div
+                class="absolute bottom-0 left-0 flex w-full px-4 pb-4"
+              >
+                <div
+                  class="flex items-center rounded-full border p-1 text-xs font-semibold backdrop-blur-md border-neutral-800 bg-black/70 text-white"
+                >
+                  <h3
+                    class="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight"
+                  >
+                    Infinix INBOOK
+                  </h3>
+                  <p
+                    class="flex-none rounded-full bg-blue-600 p-2 text-white"
+                  >
+                    1099
                     <span
                       class="ml-1 inline @[275px]/label:inline"
                     >
