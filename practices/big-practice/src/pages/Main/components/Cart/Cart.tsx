@@ -14,14 +14,14 @@ export interface ICart {
 }
 
 const Cart = ({ handleToggleCart }: ICart) => {
-  const ref = useOutsideClick(() => {
+  const cartRef = useOutsideClick(() => {
     handleToggleCart();
   });
 
   return (
     <div className='fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-black/30 opacity-100 backdrop-blur-[.5px]'>
       <aside
-        ref={ref}
+        ref={cartRef}
         className='fixed bottom-0 right-0 top-0 flex h-full w-full flex-col border-l p-4 lg:px-6 backdrop-blur-xl border-neutral-700 bg-black/90 text-white md:w-[390px] translate-x-0 z-60'
       >
         <div className='flex items-center justify-between'>
