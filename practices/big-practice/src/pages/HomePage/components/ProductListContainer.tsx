@@ -1,6 +1,5 @@
 // Libs
 import { useCallback } from 'react';
-import useSWR from 'swr';
 import { useParams, useSearchParams } from 'react-router-dom';
 
 // Components
@@ -12,6 +11,9 @@ import Skeleton from '@components/Skeleton/Skeleton';
 import { buildQueryProductEndpoint } from '@helpers/products';
 import { isEmpty } from '@helpers/utils';
 
+// Hooks
+import { useProducts } from '@hooks/useProducts';
+
 export const ProductListContainer = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const { category = '' } = useParams();
@@ -21,11 +23,9 @@ export const ProductListContainer = () => {
   const sort = searchParams.get('sort') || '';
 
   const endpoint = buildQueryProductEndpoint({ searchKeyword, standingPage, category });
-
-  const { data, isLoading } = useSWR(endpoint, { keepPreviousData: true, suspense: true });
+  const { products, total, isLoading } = useProducts(endpoint);
 
   const numberOfItemsPerPage = 9;
-  const { total, products } = data;
   const totalPage = parseInt((total / numberOfItemsPerPage).toString()) + 1;
 
   const handleChangePagination = useCallback(

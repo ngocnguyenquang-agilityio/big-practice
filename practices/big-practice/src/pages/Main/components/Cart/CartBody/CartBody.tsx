@@ -13,7 +13,7 @@ import ProductCartItemContainer from '../ProductCartItem/ProductCartItem';
 import { APP_ROUTERS } from '@constants';
 
 const CartBody = () => {
-  const { cartItems } = useCartStore();
+  const { toggleCart, cartItems } = useCartStore();
 
   const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
@@ -49,7 +49,12 @@ const CartBody = () => {
           </p>
         </div>
         <Link to={APP_ROUTERS.CHECKOUT}>
-          <Button size='xl'>Proceed to Checkout</Button>
+          <Button
+            size='xl'
+            onClick={toggleCart}
+          >
+            Proceed to Checkout
+          </Button>
         </Link>
       </div>
     </div>

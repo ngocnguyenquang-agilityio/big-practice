@@ -5,7 +5,7 @@ interface IProductDetailLayout {
 
 const ProductDetailLayout = ({ productDetail, relatedProduct }: IProductDetailLayout): JSX.Element => {
   return (
-    <div className='mx-auto max-w-screen-2xl px-4'>
+    <div className='w-full max-w-screen-2xl px-4'>
       {productDetail}
       {relatedProduct && (
         <div className='py-8'>

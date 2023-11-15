@@ -6,7 +6,7 @@ exports[`ProductCard Component Should match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="flex flex-col rounded-lg border p-8 border-neutral-800 bg-black md:p-12 lg:flex-row lg:gap-8"
+        class="flex flex-col w-full justify-between rounded-lg border p-8 border-neutral-800 bg-black md:p-12 lg:flex-row lg:gap-8"
       >
         <div
           class="h-full w-full basis-full"
@@ -16,10 +16,8 @@ exports[`ProductCard Component Should match snapshot 1`] = `
           >
             <img
               alt="Product 1 - phone"
-              class="mx-auto"
-              height="500"
+              class="object-cover w-[600px] h-[500px]"
               src="https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Ft-shirt-1.png%3Fv%3D1689798965&w=3840&q=75"
-              width="600"
             />
           </div>
           <ul
@@ -76,7 +74,7 @@ exports[`ProductCard Component Should match snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="flex flex-col rounded-lg border p-8 border-neutral-800 bg-black md:p-12 lg:flex-row lg:gap-8"
+      class="flex flex-col w-full justify-between rounded-lg border p-8 border-neutral-800 bg-black md:p-12 lg:flex-row lg:gap-8"
     >
       <div
         class="h-full w-full basis-full"
@@ -86,10 +84,8 @@ exports[`ProductCard Component Should match snapshot 1`] = `
         >
           <img
             alt="Product 1 - phone"
-            class="mx-auto"
-            height="500"
+            class="object-cover w-[600px] h-[500px]"
             src="https://demo.vercel.store/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0754%2F3727%2F7491%2Ffiles%2Ft-shirt-1.png%3Fv%3D1689798965&w=3840&q=75"
-            width="600"
           />
         </div>
         <ul

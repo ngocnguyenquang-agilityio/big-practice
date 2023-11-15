@@ -6,7 +6,7 @@ exports[`HomeLayout Should render correctly 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="mx-auto max-w-screen-2xl px-4"
+        class="w-full max-w-screen-2xl px-4"
       >
         <div>
           Product Detail
@@ -28,7 +28,7 @@ exports[`HomeLayout Should render correctly 1`] = `
   </body>,
   "container": <div>
     <div
-      class="mx-auto max-w-screen-2xl px-4"
+      class="w-full max-w-screen-2xl px-4"
     >
       <div>
         Product Detail
