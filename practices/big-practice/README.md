@@ -24,9 +24,11 @@
   - Sort by price: Low to High
   - Sort by price: High to Low
 - User can filter products by categories
+- User can search products
 - User can add products to cart
 - User can remove products out of cart
 - User can update quantity of products in cart
+- User can checkout and fill shipping form
 
 ## Targets
 
@@ -40,7 +42,7 @@
 ## Timeline
 
 - Estimate time: 8 days of working
-- Actual time: 14 days of working
+- Actual time: 20 days of working 
 
 ## Tech Stacks
 
