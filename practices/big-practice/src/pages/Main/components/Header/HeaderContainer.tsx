@@ -82,6 +82,7 @@ export const Header = memo(
                 placeholder='Search Products...'
                 onChange={handleSearch}
                 defaultValue={defaultValueSearch}
+                key={defaultValueSearch}
               />
             </form>
           </div>
